@@ -1,5 +1,8 @@
 public class caesar {
 
+    //    Encrypting code for the text
+
+
     public static String encrypt(String plainText, int shift) {
         if (shift>26) {
             shift = shift%26;
@@ -42,6 +45,8 @@ public class caesar {
         return cipherText;
     }
 
+
+//    Decrypting code for the text
     public static String decrypt(String plainText, int shift) {
         if (shift>26) {
             shift = shift%26;
@@ -86,13 +91,16 @@ public class caesar {
 
 
 
+//    Prints out Encrypted Text
 
     public static void main(String[] args) {
         String text = "The quick brown fox jumps over the lazy dog";
-        String cipher = encrypt(text,5);
+        String cipher = encrypt(text,2);
         System.out.println("Cipher Text: " + cipher);
 
-        String decrypted = decrypt(cipher, 5);
+
+//        Displays Decrypted Text
+        String decrypted = decrypt(cipher, 2);
         System.out.println("Decrypted Text: " + decrypted);
 
     }
