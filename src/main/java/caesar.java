@@ -1,6 +1,12 @@
-public class caesar {
+class caesar {
 
     //    Encrypting code for the text
+
+    caesar Caesar;
+
+    public caesar() {
+        Caesar = new caesar();
+    }
 
 
     public static String encrypt(String plainText, int shift) {
